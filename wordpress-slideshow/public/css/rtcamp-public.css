@@ -1,0 +1,52 @@
+/* Style the container for the slideshow */
+.rtcamp-slideshow {
+    position: relative;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+/* Style the slider itself */
+.rtcamp-slick-slider {
+    position: relative;
+}
+
+/* Style the individual slide (image) */
+.rtcamp-slick-slider div {
+    text-align: center;
+}
+
+/* Style the slide image */
+.rtcamp-slick-slider img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto;
+}
+
+/* Style the previous and next arrows within the .rtcamp-slideshow */
+.rtcamp-slideshow .slick-prev,
+.rtcamp-slideshow .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Default color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1; /* Ensure arrows appear above slides */
+    transition: background-color 0.3s ease;
+    background: linear-gradient(45deg, #FF5733, #7633FF); /* Gradient background color between two colors */
+}
+
+.rtcamp-slideshow .slick-prev:hover,
+.rtcamp-slideshow .slick-next:hover {
+    color: #fff; /* Hover color for arrow icon */
+    background: linear-gradient(45deg, #FF5733, #7633FF); /* Gradient background color on hover between two colors */
+}
+
+.rtcamp-slideshow .slick-prev {
+    left: -125px; /* Adjust the distance from the left edge */
+}
+
+.rtcamp-slideshow .slick-next {
+    right: -88px; /* Adjust the distance from the right edge */
+}
